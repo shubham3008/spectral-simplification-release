@@ -4,23 +4,17 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta name="description" content="simplifying-brdf-acquisition">
+  <meta property="og:title" content="simplifying-brdf-acquisition"/>
+  <meta property="og:description" content="simplifying-brdf-acquisition"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image" content="static/image/test_inplane_abc2.png" />
+  <meta property="og:image:width" content="1280"/>
+  <meta property="og:image:height" content="720"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="brdf">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -57,8 +51,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Simplifying BRDF Acquisition</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+            <!-- <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://shubham3008.github.io/" target="_blank">Shubham Chitnis</a>,</span>
                 <span class="author-block">
@@ -66,18 +59,18 @@
                   <span class="author-block">
                     <a href="https://www.cse.iitb.ac.in/~sharat/" target="_blank">Sharat Chandran</a>
                   </span>
-                  </div>
+                  </div> -->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="static/pdfs/paper.pdf" target="_blank"
+                        <a href="static/pdfs/report.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Report</span>
                       </a>
                     </span>
 
@@ -86,14 +79,14 @@
                       <a href="https://iitbacin-my.sharepoint.com/:p:/g/personal/shubham_chitnis_iitb_ac_in/EatczYHf0lFEg0Q9-Uih8A0BkWEPmg069hjAetU6aMISkw?e=w15ZuN" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="far fa-file-powerpoint"></i>
                       </span>
-                      <span>Presentation</span>
+                      <span>Slides</span>
                     </a>
                   </span>
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -101,7 +94,7 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
             </div>
           </div>
@@ -110,41 +103,6 @@
     </div>
   </div>
 </section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-	  <div class="container-compare">
-	  	<!-- Imagery name  -->
-	  	<div id="leftTabs" class="tabColumn">
-	  		<div id="leftTabTitle" class="sideTabTitle">left</div>
-	  		<div id="leftLayersList" class="imageryLayersTabs tabContainer"></div>
-	  	</div>
-
-	  	<div id="rightTabs" class="tabColumn">
-	  		<div id="rightTabTitle" class="sideTabTitle">right</div>
-	  		<div id="rightLayersList" class="imageryLayersTabs tabContainer"></div>
-	  	</div>
-
-	  	<!-- Image slider -->
-	  	<div id="sliderbox" class="img-container">
-	  		<!-- Right Image -->
-	  		<img class="fitcenter" id="img_right" src="static/images/test_inplane_abc2.png">
-	  		<!-- Left image -->
-	  		<div class="imgholder img-top">
-	  			<img class="fitcenter" id="img_left" src="static/images/test_outplane_abc2.png">
-	  		</div>
-	  		<span class="handle"></span>
-	  	</div>
-	  </div>
-    <br>
-    <span>Comparison of the living room scene rendered using: (a) tabular BRDF data, (b) Low et al. out-of-plane angles, and (c) our suggested in-plane angles. Scene was rendered using Mitsuba and taken from their gallery.</span>
-  </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -170,42 +128,42 @@ Additionally, we propose an MLP network to learn BRDFs in the spectral domain. T
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<!--
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <br>
+      <br>
+
+      <div class="container-compare">
+	  	<!-- Imagery name  -->
+	  	<div id="leftTabs" class="tabColumn">
+	  		<div id="leftTabTitle" class="sideTabTitle">left</div>
+	  		<div id="leftLayersList" class="imageryLayersTabs tabContainer"></div>
+	  	</div>
+
+	  	<div id="rightTabs" class="tabColumn">
+	  		<div id="rightTabTitle" class="sideTabTitle">right</div>
+	  		<div id="rightLayersList" class="imageryLayersTabs tabContainer"></div>
+	  	</div>
+	  	<!-- Image slider -->
+	  	<div id="sliderbox" class="img-container">
+	  		<!-- Right Image -->
+	  		<img class="fitcenter" id="img_right" src="static/images/test_inplane_abc2.png">
+	  		<!-- Left image -->
+	  		<div class="imgholder img-top">
+	  			<img class="fitcenter" id="img_left" src="static/images/test_outplane_abc2.png">
+	  		</div>
+	  		<span class="handle"></span>
+	  	</div>
+	  </div>
+    <br>
+    <span>Comparison of the living room scene rendered using: (a) tabular BRDF data, (b) Low et al. out-of-plane angles, and (c) our suggested in-plane angles. Scene was rendered using Mitsuba and taken from their gallery.</span>
   </div>
-</div>
-</div>
+  </div>
 </section>
--->
-<!-- End image carousel -->
+<!-- End teaser video -->
+
 
 
 <!--BibTex citation -->
