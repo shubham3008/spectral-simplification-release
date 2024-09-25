@@ -4,21 +4,17 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="simplifying-brdf-acquisition">
-  <meta property="og:title" content="simplifying-brdf-acquisition"/>
-  <meta property="og:description" content="simplifying-brdf-acquisition"/>
+  <meta name="description" content="spectral-brdf-simplification">
+  <meta property="og:title" content="spectral-brdf-simplification"/>
+  <meta property="og:description" content="spectral-brdf-simplification"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/test_inplane_abc2.png" />
-  <meta property="og:image:width" content="1280"/>
-  <meta property="og:image:height" content="720"/>
 
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="brdf">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Simplifying BRDF Acquisition</title>
+  <title>Spectral BRDF Simplification</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -50,51 +46,31 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Simplifying BRDF Acquisition</h1>
-            <!-- <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://shubham3008.github.io/" target="_blank">Shubham Chitnis</a>,</span>
-                <span class="author-block">
-                  <a href="https://www.ntnu.edu/employees/aditya.sole" target="_blank">Aditya Sole</a>,</span>
-                  <span class="author-block">
-                    <a href="https://www.cse.iitb.ac.in/~sharat/" target="_blank">Sharat Chandran</a>
-                  </span>
-                  </div> -->
+            <h1 class="title is-1 publication-title">Spectral BRDF Simplification</h1>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                         <!-- Data link -->
                       <span class="link-block">
                         <a href="static/pdfs/report.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+                          <i class="fas fa-file-excel"></i>
                         </span>
-                        <span>Report</span>
+                        <span>BRDF Dataset</span>
                       </a>
                     </span>
 
-                    <!-- Presentation link -->
+                    <!-- Code link -->
                     <span class="link-block">
-                      <a href="static/pdfs/presentation.pdf" target="_blank"
+                      <a href="#" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="far fa-file-powerpoint"></i>
+                        <i class="fab fa-github"></i>
                       </span>
-                      <span>Slides</span>
+                      <span>Code [coming soon]</span>
                     </a>
                   </span>
-
-                  <!-- Github link -->
-                  <!-- <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span> -->
 
             </div>
           </div>
@@ -112,68 +88,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Light interactions, modeled using the bidirectional reflectance distribution function (BRDF), form a basis for how objects appear to us. Conventionally, BRDFs are captured through rigorous and time-consuming measurements. Rendering the materials then becomes a task of looking up the right value from the tabulated measurements. This approach becomes difficult with more complex materials requiring denser measurements and more storage. Parametric models ease things up by allowing for a means to represent materials compactly. This helps ease up the rendering, but the acquisition step still poses a challenge. More efficient means to capture material BRDFs help speed up the acquisition process.
-          </p>
-          <p>
-In this work, we suggest using in-plane angle pairs for material capture. We show them to be able to capture important BRDF trends for isotropic materials through our experiments. To demonstrate this, we use existing physics-based and network-based parametric models and perform comparisons between the entire gamut of data and our suggested subset. 
-          </p>
-          <p>
-Additionally, we propose an MLP network to learn BRDFs in the spectral domain. This provides a means to have a compact BRDF model while staying in the spectral domain, avoiding any premature wavelength compression. Finally, we study the performance of these methods as a function of the number of samples used for fitting. This helps us answer the question of how little data is sufficient to represent a material BRDF accurately in the subset of materials considered.
-          </p>
+Non-diffuse materials like metallic inks, varnish coatings,
+  and paints are widely used (for example, on e-commerce
+  boxes). Spectral  rendering is a significant pre-processing
+  step in the fulfillment process. An important attribute of this is
+  the bidirectional reflection distribution function (BRDF). Current
+  methods of capturing the BRDFs have proven to be onerous in accomplishing quick turnaround time from conception and design, to production. In this paper, we consider the acquisition of 31 wavelengths for four packaging materials. We suggest the use of a multilayer perceptron as a means to provide compact material representations in the much more vast spectral space. Our neural-based scenario suggests the acquisition of far fewer measurements while maintaining significant saliency. We provide adequate results for a range of materials including a complex goniochromatic material.
+	</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End paper abstract -->
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <br>
-      <br>
-
-      <div class="container-compare">
-	  	<!-- Imagery name  -->
-	  	<div id="leftTabs" class="tabColumn">
-	  		<div id="leftTabTitle" class="sideTabTitle">left</div>
-	  		<div id="leftLayersList" class="imageryLayersTabs tabContainer"></div>
-	  	</div>
-
-	  	<div id="rightTabs" class="tabColumn">
-	  		<div id="rightTabTitle" class="sideTabTitle">right</div>
-	  		<div id="rightLayersList" class="imageryLayersTabs tabContainer"></div>
-	  	</div>
-	  	<!-- Image slider -->
-	  	<div id="sliderbox" class="img-container">
-	  		<!-- Right Image -->
-	  		<img class="fitcenter" id="img_right" src="static/images/test_inplane_abc2.png">
-	  		<!-- Left image -->
-	  		<div class="imgholder img-top">
-	  			<img class="fitcenter" id="img_left" src="static/images/test_outplane_abc2.png">
-	  		</div>
-	  		<span class="handle"></span>
-	  	</div>
-	  </div>
-    <br>
-    <span>Comparison of the living room scene rendered using: (a) tabular BRDF data, (b) Low et al. out-of-plane angles, and (c) our suggested in-plane angles. Scene was rendered using Mitsuba and taken from their gallery.</span>
-  </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-
-
-<!--BibTex citation -->
-<!--  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>  -->
-<!--End BibTex citation -->
 
 
   <footer class="footer">
