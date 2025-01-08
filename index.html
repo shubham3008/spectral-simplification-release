@@ -46,23 +46,24 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Spectral BRDF Simplification</h1>
+            <h1 class="title is-1 publication-title">Spectral Bidirectional Reflectance Distribution Function
+Simplification</h1>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Data link -->
                       <span class="link-block">
-                        <a href="#" target="_blank"
+                        <a href="static/files/release.zip"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-excel"></i>
+                          <i class="fas fa-file"></i>
                         </span>
-                        <span>Dataset [awaiting paper acceptance]</span>
+                        <span>Dataset and Scripts</span>
                       </a>
                     </span>
 
                     <!-- Code link -->
-                    <span class="link-block">
+                    <!--<span class="link-block">
                       <a href="#" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -70,7 +71,7 @@
                       </span>
                       <span>Code [awaiting paper acceptance]</span>
                     </a>
-                  </span>
+                  </span> -->
 
             </div>
           </div>
@@ -88,12 +89,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Non-diffuse materials like metallic inks, varnish coatings,
-  and paints are widely used (for example, on e-commerce
-  boxes). Spectral  rendering is a significant pre-processing
-  step in the fulfillment process. An important attribute of this is
-  the bidirectional reflection distribution function (BRDF). Current
-  methods of capturing the BRDFs have proven to be onerous in accomplishing quick turnaround time from conception and design, to production. In this paper, we consider the acquisition of 31 wavelengths for four packaging materials. We suggest the use of a multilayer perceptron as a means to provide compact material representations in the much more vast spectral space. Our neural-based scenario suggests the acquisition of far fewer measurements while maintaining significant saliency. We provide adequate results for a range of materials including a complex goniochromatic material.
+Non-diffuse materials (e.g., metallic inks, varnishes, and paints) are widely used in real-
+world applications. Accurate spectral rendering relies on the bidirectional reflectance distribution
+function (BRDF). Current methods of capturing the BRDFs have proven to be onerous in accomplish-
+ing quick turnaround time, from conception and design to production. We propose a multi-layer
+perceptron for compact spectral material representations, with 31 wavelengths for four real-world
+packaging materials. Our neural-based scenario reduces measurement requirements while maintain-
+ing significant saliency. Unlike tristimulus BRDF acquisition, this spectral approach has not, to our
+knowledge, been previously explored with neural networks. We demonstrate compelling results for
+diffuse, glossy, and goniochromatic materials.
 	</p>
         </div>
       </div>
